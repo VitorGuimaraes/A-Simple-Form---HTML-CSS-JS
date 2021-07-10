@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de formulário</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <form name="formuser" action="">
+    <h2>
+        Formulário
+    </h2>
+
+    <div class="input">
+        <input  type="text" name = "nome"/>
+        <label>Nome</label>
+        <span class="error"></span>
+    </div>
+
+    <div class="input">
+        <input  type="text" name="telefone" onkeydown="javascript: fMasc( this, maskTel );" />
+        <label>Telefone</label>
+        <span class="error"></span>
+    </div>
+
+    <div class="input">
+        <input  type="text" name="email"/>
+        <label>Email</label>
+        <span class="error"></span>
+    </div>
+
+    <button type="submit" onclick="return validar()" id="submit" >Enviar</button>
+
+    </form>
+</body>
+
+</html>
